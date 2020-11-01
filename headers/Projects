@@ -1,1 +1,47 @@
+---
+title: Academic Projects
+layout: page
+icon: fa-graduation-cap
+order: 3
+---
+
+<div class="container">
+
+
+      <div class="item">
+        <header>
+          <h2>image processing r</h2>
+        </header>
+         <p> 
+          <ul> 
+
+          </ul>
+        </p>
+      </div>
+
+      <div class="item">
+        <header>
+          <h2>COMMUNICATION</h2>
+        </header>
+         <p> 
+          <ul> 
+          <li> PAPER Link </b>. </li>
+
+          </ul>
+        </p>
+      </div>
+      <div class="item">
+        <header>
+          <h2>btp</h2>
+        </header>
+         <p> 
+          <ul> 
+          <li> PAPER Link </b>. </li>
+
+          </ul>
+        </p>
+      </div>
+
+
+</div>
 
