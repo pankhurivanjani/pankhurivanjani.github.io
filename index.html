@@ -53,7 +53,37 @@
         </tbody></table>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          
+          <tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <div style="display: flex;">
+                  <div style="flex: 0 0 25%; max-width: 25%;">
+                    <img src='images/mdt_calvin.gif' style="width: 100%; max-width: 100%;">
+                  </div>
+                  <div style="flex: 0 0 75%; max-width: 75%; padding-left: 20px;">
+                    <a href="https://intuitive-robots.github.io/beso-website">
+                      <papertitle>Multimodal Diffusion Transformer for Learning from Play</papertitle>
+                    </a>
+                    <br>
+                    <strong>Moritz Reuss</strong>,
+                    <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a> <br>
+                    <br>
+                    <em><span style="color:red;">Oral</span> @ Workshop on Language and Robot Learning (LangRob)
+                      @ CoRL 2023,
+                    <br>
+                    /
+                    <a href="https://openreview.net/pdf?id=nvtxqMGpn1">OpenReview</a>
+                    <p></p>
+                    <p>
+                      We present a novel diffusion policy for learning from uncurated, reward-free offline data with sparse language labels.
+                      Our method, called Multimodal Diffusion Transformer (MDT), is able to learn complex, long-horizon behaviors and sets a new state-of-the-art on the challenging CALVIN benchmark.
+                      MDT uses a novel transformer architecture for diffusion policies, that leverages pre-trained vision and language foundation models and alligns
+                      multimodal goal-specifications in the latent space of the transformer enocder to enable effective learning from play with multimodal goal specifications.
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
             <tbody>
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle">
@@ -71,8 +101,9 @@
                             <a href="https://irl.anthropomatik.kit.edu/21_78.php">Xiaogang Jia</a>,
                             <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a> <br>
                             <br>
-                            <em><span style="color:red;">Best Paper Award</span> @ Workshop on Learning from Diverse, Offline Data (L-DOD) @ ICRA 2023, 
-                                   Robotics: Science and Systems (RSS)</em>, 2023
+                            <em><span style="color:red; font-weight:bold;">Best Paper Award</span> @ Workshop on Learning from Diverse, Offline Data
+                              (L-DOD) @ ICRA 2023, Robotics: Science and Systems (RSS)</em>, 2023
+
                             <br>
                             <a href="https://intuitive-robots.github.io/beso-website">project page</a> 
                             /
@@ -82,7 +113,7 @@
                             <p></p>
                             <p>
                             We present a novel policy representation, called BESO, for goal-conditioned imitation learning using score-based diffusion models.
-                            The policy is able to effectively learn goal-directed, multi-modal behavior from uncurated reward-free offline-data.
+                            BESO is able to effectively learn goal-directed, multi-modal behavior from uncurated reward-free offline-data.
                             On several challening benchmarks our method outperforms current policy representation by a wide margin. 
                             BESO can also be used as a standard policy for imitation learning and achieves state-of-the-art performance
                             with only 3 denoising steps. 
@@ -103,7 +134,7 @@
                       </papertitle>
                     </a>
                     <br>
-                    <a href="https://alr.anthropomatik.kit.edu/21_495.php">Dennis Blessing</a>,
+                    <a href="https://alr.anthropomatik.kit.edu/21_495.php">Denis Blessing</a>,
                     <a href="https://alr.anthropomatik.kit.edu/21_69.php">Onur Celik</a>,
                     <a href="https://irl.anthropomatik.kit.edu/21_78.php">Xiaogang Jia</a>,
                     <strong>Moritz Reuss</strong>,
@@ -146,6 +177,7 @@
                 <p></p>
                 <p>
                 We present a novel hybrid model, combining an differentiable rigid-body model with an recurrent LSTM, to accurately model the inverse dynamics of a robot manipulator.
+                Our novel differentiable formulation of Barycentric parameters enables us to train our model end-to-end jointly with the residual neural network, while implicitly maintaining all requirements for physical consistency.
                 We test our model on a Franka Emika Panda robot and show that it can be used to enable precise and compliant motion tracking.</p>
               </td>
             </tr>
