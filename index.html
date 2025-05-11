@@ -69,7 +69,7 @@
                       <papertitle>DisDP: Robust Imitation Learning via Disentangled Diffusion Policies</papertitle>
                     </a>
                     <br>
-                    <strong>Pankhuri Vanjani*</strong>,
+                    <strong>Pankhuri Vanjani</strong>,
                     <a >Paul Mattes</a>,
                     <a >Xiaogang Jia</a>,
 		    <a >Vedant Dave</a>,
@@ -81,11 +81,16 @@
                   <a href="https://openreview.net/forum?id=0GSL9VRBib&noteId=0P93HqQSgo">OpenReviewnet</a>
                   <p></p>
                     <p>
-                      We propose Mixture-of-Denoising Experts (MoDE) as a novel generalist policy for guided behavior generation, that outperforms dense transformer-based Diffusion Policies in performance, number of parameters and efficiency. 
-                      Our proposed method introduces a novel routing strategy, that conditions the expert selection on the current noise level of the diffusion process. We test MoDE on four established imitation learning benchmarks, including CALVIN and LIBERO. 
-                      In our experiments, MoDE consistently outperforms dense transformer architectures and state-of-the-art baselines on CALVIN and LIBERO benchmark. 
-                      We pretrain MoDE on a subset of OXE for just 3 days on 6 GPUS to surpass OpenVLA and Octo in terms of performance on SIMPLER.
-                      In addition, MoDE achieves higher average performance with 90% less FLOPS, 20% faster inference and 40% less parameters compared to the dense transformer diffusion policy.
+                    This work introduces Disentangled Diffusion Policy (DisDP), an Imitation Learning (IL)
+method that enhances robustness by integrating multi-view disentanglement into diffusionbased policies. For robots to be deployed on a large scale across various applications they have
+to be robust against different perturbations, including sensor noise, complete sensor dropout
+and environmental variations. Existing IL methods struggle to generalize under such conditions, as they typically assume consistent, noise-free inputs. To address this limitation, DisDP
+structures sensory inputs into shared and private representations, preserving task-relevant
+global features while retaining distinct details from individual sensors. Additionally, Disentangled Behavior Cloning (DisBC) is introduced, a disentangled Behavior Cloning (BC) policy, to
+demonstrate the general applicance of disentanglement for IL. This structured representation
+improves resilience against sensor dropouts and perturbations. Evaluations on The Colosseum
+and Libero benchmarks demonstrate that disentangled policies achieve better performance in
+general and exhibit greater robustness to any perturbations compared to their baseline policies.
                     </p>
                   </div>
                 </div>
