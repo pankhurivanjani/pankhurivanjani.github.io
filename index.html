@@ -55,6 +55,48 @@
 
 </tbody>
 
+	  <tr style="background-color: #ffffd0;">
+  <td style="padding:20px;width:100%;vertical-align:middle">
+    <div style="display: flex;">
+      <div style="flex: 0 0 25%; max-width: 25%;">
+        <img src='images/dam_vla.png' style="width: 100%; max-width: 100%;">
+      </div>
+      <div style="flex: 0 0 75%; max-width: 75%; padding-left: 20px;">
+        <a href="https://intuitive-robots.github.io/DAM-VLA/">
+          <papertitle>DAM-VLA: Decoupled Asynchronous Multimodal Vision Language Action Model</papertitle>
+        </a>
+        <br>
+        <strong>Pankhuri Vanjani</strong>,
+        Zhuoyue Li,
+        Jakub Suliga,
+        <a href="https://mbreuss.github.io/">Moritz Reuss</a>,
+        Gianluca Geraci,
+        <a href="https://xinkai-jiang.github.io/">Xinkai Jiang</a>,
+        <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a>
+        <br>
+        <br>
+        <em>Preprint</em>, 2025
+        <br>
+        <a href="https://intuitive-robots.github.io/DAM-VLA/">Project Page</a> &nbsp/&nbsp
+        <a href="https://arxiv.org/pdf/2606.12105">arXiv</a>
+        <p></p>
+        <p>
+         Vision-language-action (VLA) models inherit a shared synchronous clock from vision-language pretraining, processing every input at one rate. This
+is misaligned with physical interaction, where a high-frequency modality changes
+at hundreds of hertz, vision evolves more slowly, and language stays constant
+across an episode. A synchronous VLA oversamples slow modalities, undersamples fast ones, and caps action generation at the lowest effective frequency. We
+hypothesize that decoupling temporal processing per modality, letting each update
+and retain information at its own sensor rate, yields stronger representations and
+more robust control. We present Decoupled Asynchronous Multimodal Vision
+Language Action (DAM-VLA), which maintains per-modality latent buffers refreshed at sensor rates and read continuously by the action head, integrating new
+high-frequency modalities through gated cross-attention that leaves the pretrained
+backbone intact. Across seven contact-rich real-world manipulation tasks, DAMVLA more than doubles the average success rate of the strongest synchronous
+baseline (95.2% vs. 40.95%) while sustaining smooth, reactive 100 Hz control
+        </p>
+      </div>
+    </div>
+  </td>
+</tr>
 
 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody>
