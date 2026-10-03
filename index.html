@@ -136,6 +136,39 @@ baseline (95.2% vs. 40.95%) while sustaining smooth, reactive 100 Hz control
 
 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody>
+            <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <div style="display: flex;">
+                  <div style="flex: 0 0 100%; max-width: 100%;">
+                    <papertitle>Few-Shot Residual Adaptation of Pretrained Latent World Models</papertitle>
+                    <br>
+                    Jakub Suliga,
+                    <strong>Pankhuri Vanjani</strong>,
+                    Nisarga Nilavadi,
+                    Wolfram Burgard,
+                    <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a>
+                    <br>
+                    <br>
+<em>8th Robot Learning Workshop</em>, NeurIPS 2026 &mdash; &#11088; Oral<br>
+<em>Continual World Models</em>, NeurIPS 2026 Workshop
+                  <p></p>
+                    <p>
+                    Pretrained latent world models can support visual planning and control, but their predictions may fail when
+physical dynamics change at deployment. We study whether such models can adapt from only a few interactions
+without modifying their pretrained weights or identifying the changed physical parameters. We introduce a
+few-shot residual adaptation approach that learns self-supervised corrections from latent prediction errors. The
+corrections are applied both inside the latent predictor and directly to its predicted latent state, while the
+pretrained world model remains frozen. We evaluate the approach in simulation and on a real robot under
+center-of-mass and friction shifts. These changes reduce the success of the frozen model to near zero. Using three
+interaction episodes for adaptation, our dual-site approach recovers 90% success under the center-of-mass shift
+and 100% under the modified friction on the real robot. Ablations show that correcting both locations outperforms
+single-site adaptation. Our diagnostics further suggest that much of the learned correction reduces a general
+prediction mismatch, while successful control also depends on shift-specific information captured during adaptation.
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
             <tr style="background-color: #ffffd0;">
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <div style="display: flex;">
