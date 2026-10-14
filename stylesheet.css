@@ -204,3 +204,43 @@ span.highlight {
 .read-more:hover {
   color: #f09228;
 }
+
+/* Soft blurred video banner */
+body {
+  margin: 0;
+}
+
+.hero {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  background: #f4f4f4;
+}
+
+.hero video {
+  position: absolute;
+  inset: -12px;
+  width: calc(100% + 24px);
+  height: calc(100% + 24px);
+  object-fit: cover;
+  filter: blur(4px) saturate(1.1);
+  opacity: 0.75;
+}
+
+.hero-fade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.45) 60%, #ffffff 100%);
+}
+
+@media (max-width: 600px) {
+  .hero {
+    height: 130px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero video {
+    display: none;
+  }
+}
