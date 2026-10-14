@@ -129,3 +129,78 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+/* Paper list */
+.papers {
+  padding: 0 20px;
+}
+
+.paper {
+  padding: 20px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+}
+
+.paper.highlight {
+  background-color: #ffffd0;
+}
+
+.paper-title papertitle {
+  font-size: 16px;
+}
+
+.paper-authors,
+.paper-venue,
+.paper-links,
+.paper-note {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+.paper-note {
+  font-size: 12px;
+  color: #666;
+}
+
+.paper-media {
+  margin: 14px 0 10px;
+  text-align: center;
+}
+
+.paper-media img,
+.paper-media video {
+  max-width: 100%;
+  max-height: 380px;
+  border-radius: 4px;
+}
+
+.abstract {
+  margin: 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+.abstract.expanded {
+  display: block;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  overflow: visible;
+}
+
+.read-more {
+  background: none;
+  border: 0;
+  padding: 4px 0 0;
+  color: #1772d0;
+  cursor: pointer;
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.read-more:hover {
+  color: #f09228;
+}
