@@ -11,10 +11,21 @@
 </head>
 
 <body>
-  <div class="hero" aria-hidden="true">
-    <video src="videos/recat_hero_tasks.mp4" autoplay muted loop playsinline></video>
-    <div class="hero-fade"></div>
+  <div class="bg-videos" aria-hidden="true">
+    <video class="active" src="videos/recat_hero_tasks.mp4" autoplay muted loop playsinline></video>
+    <video src="https://intuitive-robots.github.io/DAM-VLA/static/videos/teaser.mp4" autoplay muted loop playsinline preload="auto"></video>
   </div>
+  <script>
+    (function () {
+      var vids = document.querySelectorAll('.bg-videos video'), i = 0;
+      if (vids.length < 2) return;
+      setInterval(function () {
+        vids[i].classList.remove('active');
+        i = (i + 1) % vids.length;
+        vids[i].classList.add('active');
+      }, 10000);
+    })();
+  </script>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
