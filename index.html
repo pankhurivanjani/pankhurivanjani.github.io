@@ -102,15 +102,24 @@
             <button type="button" class="read-more">Read more</button>
             <div class="paper-note">* Equal contribution</div>
           </div>
-          <div class="paper">
-            <div class="paper-title"><papertitle>Few-Shot Residual Adaptation of Pretrained Latent World Models</papertitle></div>
+          <div class="paper supervised">
+            <div class="paper-title"><papertitle>Few-Shot Residual Adaptation of Pretrained Latent World Models</papertitle><span class="supervised-tag">Supervised project</span></div>
             <div class="paper-authors">Jakub Suliga, <strong>Pankhuri Vanjani</strong>, Nisarga Nilavadi, Wolfram Burgard, <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a></div>
             <div class="paper-venue"><em>8th Robot Learning Workshop</em>, NeurIPS 2026 &mdash; &#11088; Oral<br>
               <em>Continual World Models</em>, NeurIPS 2026 Workshop<br>
               <em>Robot Learning at Deployment</em>, CoRL 2026 Workshop<br>
-              <em>Do Robots Need World Models?</em>, CoRL 2026 Workshop &mdash; &#11088; Spotlight</div>
+              <em>Do Robots Need World Models?</em>, CoRL 2026 Workshop &mdash; &#11088; Spotlight<br>
+              <em>Continually Self-Improving Robots</em>, CoRL 2026 Workshop</div>
             <div class="paper-media"><img src="images/residual_adaptation.png" alt="Few-Shot Residual Adaptation of Pretrained Latent World Models" loading="lazy"></div>
             <p class="abstract">Pretrained latent world models can support visual planning and control, but their predictions may fail when physical dynamics change at deployment. We study whether such models can adapt from only a few interactions without modifying their pretrained weights or identifying the changed physical parameters. We introduce a few-shot residual adaptation approach that learns self-supervised corrections from latent prediction errors. The corrections are applied both inside the latent predictor and directly to its predicted latent state, while the pretrained world model remains frozen. We evaluate the approach in simulation and on a real robot under center-of-mass and friction shifts. These changes reduce the success of the frozen model to near zero. Using three interaction episodes for adaptation, our dual-site approach recovers 90% success under the center-of-mass shift and 100% under the modified friction on the real robot. Ablations show that correcting both locations outperforms single-site adaptation. Our diagnostics further suggest that much of the learned correction reduces a general prediction mismatch, while successful control also depends on shift-specific information captured during adaptation.</p>
+            <button type="button" class="read-more">Read more</button>
+          </div>
+          <div class="paper supervised">
+            <div class="paper-title"><papertitle>What Makes a VLA Reactive? A Study of Execution Strategies for Dynamic Manipulation</papertitle><span class="supervised-tag">Supervised project</span></div>
+            <div class="paper-authors">Zhuoyue Li, Zhendong Han, <strong>Pankhuri Vanjani</strong>, Wenting Li, <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a></div>
+            <div class="paper-venue"><em>Efficient Foundation Models for Real-Time Embodied AI</em>, CoRL 2026 Workshop</div>
+            <div class="paper-media"><img src="images/vla_reactive.jpg" alt="What Makes a VLA Reactive? A Study of Execution Strategies for Dynamic Manipulation" loading="lazy"></div>
+            <p class="abstract">Vision-language-action (VLA) models predict chunks of future actions, and when objects move, those chunks go stale before they are executed. We study what makes a pretrained VLA reactive, using &pi;<sub>0.5</sub> on two dynamic simulation benchmarks and three real-robot tasks. We vary the prediction and execution horizons, compare synchronous and asynchronous inference, test methods that deliver actions sooner or keep successive chunks continuous, and adapt the policy with motion cues and latent-space reinforcement learning. The best prediction horizon is about one second, and the best execution horizon depends on the checkpoint. Short horizons help more with asynchronous execution, and methods that keep the trajectory continuous outperform those that only reduce latency. Adapting the policy repairs targeted failures, but on the conveyor task changing the execution horizon gained as much. Reactivity depends on the execution pipeline as much as on the policy, so both should be evaluated together.</p>
             <button type="button" class="read-more">Read more</button>
           </div>
           <div class="paper highlight">

@@ -144,6 +144,21 @@ span.highlight {
   background-color: #ffffd0;
 }
 
+/* Projects I supervised (student first author): very light slate-blue tint */
+.paper.supervised {
+  background-color: #eef2f6;
+}
+
+.supervised-tag {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: normal;
+  color: #4A6A8A;
+  margin-left: 8px;
+  white-space: nowrap;
+}
+
 .paper-title papertitle {
   font-size: 16px;
 }
