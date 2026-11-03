@@ -1,189 +1,169 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Pankhuri Vanjani</title>
-  
-  <meta name="author" content="Moritz Reuss">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <title>Pankhuri Vanjani</title>
+  <meta name="author" content="Pankhuri Vanjani">
+  <meta name="description" content="Pankhuri Vanjani, PhD student at KIT working on robust multimodal robot learning.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
 </head>
-
 <body>
-  <div class="bg-videos" aria-hidden="true">
-    <video class="active" src="videos/recat_hero_tasks.mp4" autoplay muted loop playsinline></video>
-    <video src="https://intuitive-robots.github.io/DAM-VLA/static/videos/teaser.mp4" autoplay muted loop playsinline preload="auto"></video>
+  <div class="layout">
+    <aside class="sidebar">
+      <img class="photo" src="images/pankhuri-red.jpeg" alt="Pankhuri Vanjani">
+      <h1>Pankhuri Vanjani</h1>
+      <p class="role">PhD student<br>Intuitive Robots Lab, KIT</p>
+      <nav class="contact"><a href="mailto:pankhurivanjani@gmail.com">Email</a><a href="data/pankhuriCV.pdf">CV</a><a href="https://scholar.google.de/citations?user=P4LhJLgAAAAJ&amp;hl=de">Google Scholar</a><a href="https://github.com/pankhurivanjani/">GitHub</a><a href="https://www.linkedin.com/in/pankhuri-vanjani-767283101/">LinkedIn</a></nav>
+      <div class="interests">
+        <span>Multimodal policies</span><span>Tactile sensing</span><span>Robot memory</span><span>VLAs</span><span>Robustness</span>
+      </div>
+      <nav class="jump"><a href="#about">About</a><a href="#news">News</a><a href="#research">Research</a></nav>
+    </aside>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>I am a PhD student in the <a href="https://irl.anthropomatik.kit.edu/">Intuitive Robots Lab</a> (IRL) at the Karlsruhe Institute of Technology (KIT), Germany, supervised by <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a>.</p><p>My research focuses on robust robot policies that operate reliably in complex, real-world environments by leveraging multiple sensor modalities: vision, force, touch and language. I build embodied agents that learn fine-grained manipulation skills and keep working under sensor failures, noise and incomplete observations.</p><p>Previously, I did my Master&rsquo;s in Embedded Systems (Computer Science) at Saarland University and wrote my thesis at the Max Planck Institute for Informatics, supervised by <a href="https://people.mpi-inf.mpg.de/~golyanik/">Vladislav Golyanik</a>.</p>
+      </section>
+
+      <section id="news">
+        <h2>News</h2>
+        <ul class="news"><li><time>Nov 2026</time><span>Presenting <b>DAM-VLA</b> at <b>CoRL 2026</b>, together with several workshop papers.</span></li><li><time>Oct 2026</time><span><b>Few-Shot Residual Adaptation</b> selected for an <span class="hl">oral</span> at the NeurIPS 2026 Robot Learning Workshop.</span></li><li><time>Sep 2026</time><span><b>ReCAT</b> is out on arXiv: structured recurrent memory for robot manipulation.</span></li><li><time>Sep 2026</time><span><b>TACTIC</b>, a large real-world study of tactile encoders, is out on arXiv.</span></li><li class="older"><time>Jul 2026</time><span><b>Touch Improves Grasping</b> presented as an <span class="hl">oral</span> at the RSS 2026 Dexterous Manipulation Workshop.</span></li><li class="older"><time>Jul 2025</time><span><b>DisDP</b> presented at RLC 2025.</span></li></ul>
+        <button type="button" class="link-btn" id="news-toggle">Show older news</button>
+      </section>
+
+      <section id="research">
+        <h2>Research</h2>
+        <nav class="theme-nav"><a href="#mem">Memory & World Models</a><a href="#multi">Multimodal & Tactile Sensing</a><a href="#robust">Robust & Reactive Policies</a></nav>
+        <section class="theme" id="mem">
+          <div class="theme-head"><h3>Memory &amp; World Models</h3><p>Policies that remember, count and keep time, and world models that adapt at deployment.</p></div>
+          <article class="pub is-first">
+            <div class="media"><video src="videos/recat_teaser_plant.mp4" poster="images/recat_teaser.jpg" muted loop playsinline preload="metadata"></video><span class="play" aria-hidden="true">&#9654;</span></div>
+            <div class="pub-body">
+              <h4><a href="https://intuitive-robots.github.io/ReCAT/">ReCAT: Remember, Count, and Time: Structured Recurrent Memory for Robot Manipulation</a></h4>
+              <p class="authors"><strong>Pankhuri Vanjani</strong>*, Mostafa Hatab*, Can Mizrakli*, Vaisakh Shaj, Zhuoyue Li, <a href="https://mbreuss.github.io/">Moritz Reuss</a>, <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a></p>
+              <div class="badges"><span class="badge venue">arXiv 2026</span><span class="badge">CoRL 2026 Workshop</span><span class="badge first">First author</span></div>
+              <div class="actions"><a class="btn" href="https://intuitive-robots.github.io/ReCAT/">Project Page</a><a class="btn" href="https://arxiv.org/abs/2609.35200">arXiv</a></div>
+              <div class="toggles"><details><summary>Abstract</summary><p>Memory-dependent manipulation requires robots to make decisions using information that is no longer available to their current sensors, such as recalling an earlier visual cue, tracking task progress, counting repeated events, or estimating elapsed time. We present ReCAT, a language-conditioned policy with structured recurrent memory. An instruction-conditioned encoder forms features from the current observation. A recurrent memory integrates the observation stream through Mamba-2 layers and one causal attention layer. A flow-matching Transformer decoder reads the current and the historical representation through separate cross-attention in every block. ReCAT reaches 95.3% average success on LIBERO and 62.4% on RMBench, with the best or tied-best result on six of nine tasks. On three real-robot tasks probing spatial recall, event counting, and interval timing, the best ReCAT variant reaches 66.7% average success, against 8.3% for the strongest short-history baseline. Controlled comparisons within ReCAT show that the observation encoder and every-block memory conditioning are needed for this performance. They also show that update rules developed for efficient sequence modeling behave differently as robot memory: additive updates have the highest observed success on counting and timing, and delta-rule updates on spatial recall.</p><p class="note">* Core contributors</p></details><details><summary>All venues (2)</summary><ul><li><em>arXiv preprint</em>, 2026</li><li><em>Memory for Robot Foundation Models</em>, CoRL 2026 Workshop</li></ul></details></div>
+            </div>
+          </article>
+          <article class="pub">
+            <div class="media"><img src="images/residual_adaptation.png" alt="" loading="lazy"></div>
+            <div class="pub-body">
+              <h4>Few-Shot Residual Adaptation of Pretrained Latent World Models</h4>
+              <p class="authors">Jakub Suliga, <strong>Pankhuri Vanjani</strong>, Nisarga Nilavadi, Wolfram Burgard, <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a></p>
+              <div class="badges"><span class="badge venue">NeurIPS 2026 Workshop</span><span class="badge star">Oral</span><span class="badge star">CoRL 2026 Workshop Spotlight</span><span class="badge sup">Supervised project</span></div>
+              <div class="actions"></div>
+              <div class="toggles"><details><summary>Abstract</summary><p>Pretrained latent world models can support visual planning and control, but their predictions may fail when physical dynamics change at deployment. We study whether such models can adapt from only a few interactions without modifying their pretrained weights or identifying the changed physical parameters. We introduce a few-shot residual adaptation approach that learns self-supervised corrections from latent prediction errors. The corrections are applied both inside the latent predictor and directly to its predicted latent state, while the pretrained world model remains frozen. We evaluate the approach in simulation and on a real robot under center-of-mass and friction shifts. These changes reduce the success of the frozen model to near zero. Using three interaction episodes for adaptation, our dual-site approach recovers 90% success under the center-of-mass shift and 100% under the modified friction on the real robot. Ablations show that correcting both locations outperforms single-site adaptation. Our diagnostics further suggest that much of the learned correction reduces a general prediction mismatch, while successful control also depends on shift-specific information captured during adaptation.</p></details><details><summary>All venues (6)</summary><ul><li><em>8th Robot Learning Workshop</em>, NeurIPS 2026 &mdash; &#11088; Oral</li><li><em>Continual World Models</em>, NeurIPS 2026 Workshop</li><li><em>Robot Learning at Deployment</em>, CoRL 2026 Workshop</li><li><em>Do Robots Need World Models?</em>, CoRL 2026 Workshop &mdash; &#11088; Spotlight</li><li><em>Continually Self-Improving Robots</em>, CoRL 2026 Workshop</li><li><em>Bringing Physics Simulation and World Models Together for Robotic Manipulation</em>, CoRL 2026 Workshop</li></ul></details></div>
+            </div>
+          </article>
+        </section>
+        <section class="theme" id="multi">
+          <div class="theme-head"><h3>Multimodal &amp; Tactile Sensing</h3><p>Fusing vision, force, touch and language, each at its own rate.</p></div>
+          <article class="pub is-first">
+            <div class="media"><video src="https://intuitive-robots.github.io/DAM-VLA/static/videos/teaser.mp4#t=0.5" muted loop playsinline preload="metadata"></video><span class="play" aria-hidden="true">&#9654;</span></div>
+            <div class="pub-body">
+              <h4><a href="https://intuitive-robots.github.io/DAM-VLA/">DAM-VLA: Decoupled Asynchronous Multimodal Vision Language Action Model</a></h4>
+              <p class="authors"><strong>Pankhuri Vanjani</strong>, Zhuoyue Li, Jakub Suliga, <a href="https://mbreuss.github.io/">Moritz Reuss</a>, Gianluca Geraci, <a href="https://xinkai-jiang.github.io/">Xinkai Jiang</a>, <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a></p>
+              <div class="badges"><span class="badge venue">CoRL 2026</span><span class="badge star">RSS 2025 Workshop Spotlight</span><span class="badge first">First author</span></div>
+              <div class="actions"><a class="btn" href="https://intuitive-robots.github.io/DAM-VLA/">Project Page</a><a class="btn" href="https://arxiv.org/pdf/2606.12105">arXiv</a></div>
+              <div class="toggles"><details><summary>Abstract</summary><p>Vision-language-action (VLA) models inherit a shared synchronous clock from vision-language pretraining, processing every input at one rate. This is misaligned with physical interaction, where a high-frequency modality changes at hundreds of hertz, vision evolves more slowly, and language stays constant across an episode. A synchronous VLA oversamples slow modalities, undersamples fast ones, and caps action generation at the lowest effective frequency. We hypothesize that decoupling temporal processing per modality, letting each update and retain information at its own sensor rate, yields stronger representations and more robust control. We present Decoupled Asynchronous Multimodal Vision Language Action (DAM-VLA), which maintains per-modality latent buffers refreshed at sensor rates and read continuously by the action head, integrating new high-frequency modalities through gated cross-attention that leaves the pretrained backbone intact. Across seven contact-rich real-world manipulation tasks, DAMVLA more than doubles the average success rate of the strongest synchronous baseline (95.2% vs. 40.95%) while sustaining smooth, reactive 100 Hz control</p></details><details><summary>All venues (5)</summary><ul><li><em>Conference on Robot Learning (CoRL)</em>, 2026</li><li><em>From Perception to Action: Representation-Centric Robot Autonomy</em>, RSS 2025 Workshop</li><li><em>Diffusion for Robot Learning: From Generation to Action</em>, RSS 2025 Workshop — ⭐ Spotlight</li><li><em>Semantic Reasoning and Goal Understanding in Robotics</em>, RSS 2025 Workshop</li><li><em>Planning and Control with Imperfect Sensors and Perception</em>, RSS 2025 Workshop</li></ul></details></div>
+            </div>
+          </article>
+          <article class="pub is-first">
+            <div class="media contain"><img src="https://lasr-lab.github.io/touch-improves-grasping/images/method.png" alt="" loading="lazy"></div>
+            <div class="pub-body">
+              <h4><a href="https://lasr-lab.github.io/touch-improves-grasping/">Touch Improves Learning Dexterous Grasping from Demonstration</a></h4>
+              <p class="authors">Niklas Leukroth*, <strong>Pankhuri Vanjani</strong>*, Jakub Suliga, Ken Nakahara, <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a>, Roberto Calandra</p>
+              <div class="badges"><span class="badge venue">Preprint 2026</span><span class="badge star">RSS 2026 Workshop Oral</span><span class="badge first">First author</span></div>
+              <div class="actions"><a class="btn" href="https://lasr-lab.github.io/touch-improves-grasping/">Project Page</a></div>
+              <div class="toggles"><details><summary>Abstract</summary><p>Robotic dexterous grasping with human-level performance remains an unsolved challenge. Imitation Learning (IL) offers a compelling paradigm, yet vision-only approaches are brittle under lighting changes and novel objects. Touch sensing addresses this gap by grounding manipulation in contact properties rather than visual appearance. We present a systematic study of touch sensing in dexterous, multi-fingered IL, evaluating three algorithms (ACT, Flow Matching, BESO) across transformer, Mamba, and xLSTM backbones, and three tactile representations (Vision-only, end-to-end CNN, pretrained Sparsh-X). Using VR teleoperation with a Digit 360-equipped robotic hand, we collect demonstrations and evaluate generalization to novel objects and robustness to lighting perturbations. We train 21 policy variants (7 algorithms-backbone combinations × 3 tactile representations) and evaluate each on the training and test objects, yielding 28 comparison pairs. In 25 of 28, tactile signals match or improve upon vision-only performance, with the largest gains on unseen objects and degraded lighting. Failure analysis reveals that touch primarily improves initial grasp alignment, reducing misplaced approaches. Notably, end-to-end CNN encoders degrade diffusion-based policies by corrupting visual subtasks, while pretrained encoders avoid this. These results provide practical guidance on learning algorithm, backbone, and tactile representation choices for imitation learning of dexterous grasping.</p><p class="note">* Equal contribution</p></details><details><summary>All venues (3)</summary><ul><li><em>Preprint</em>, 2026</li><li><em>4th Workshop on Dexterous Manipulation: Scalable Learning for Human-Level Skills</em>, RSS 2026 Workshop &mdash; &#11088; Oral</li><li><em>Tactile Sensing for Robotic Foundation Models</em>, RSS 2026 Workshop</li></ul></details></div>
+            </div>
+          </article>
+          <article class="pub">
+            <div class="media"><video src="https://utn-air.github.io/TACTIC/static/videos/tactic.mp4#t=0.5" muted loop playsinline preload="metadata"></video><span class="play" aria-hidden="true">&#9654;</span></div>
+            <div class="pub-body">
+              <h4><a href="https://utn-air.github.io/TACTIC/">TACTIC: Understanding Tactile Encoders and Conditioning for Contact-rich Robot Manipulation Policies</a></h4>
+              <p class="authors">Seongjin Bien, Débora Oliveira Makowski, Carlo Kneissl, Reihaneh Mirjalili, <strong>Pankhuri Vanjani</strong>, <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a>, Gitta Kutyniok, Florian Walter, Wolfram Burgard</p>
+              <div class="badges"><span class="badge venue">arXiv 2026</span><span class="badge">CoRL 2026 Workshop</span></div>
+              <div class="actions"><a class="btn" href="https://utn-air.github.io/TACTIC/">Project Page</a><a class="btn" href="https://arxiv.org/abs/2609.30969">arXiv</a><a class="btn" href="https://huggingface.co/collections/UTN-AIR/tactic">Dataset</a></div>
+              <div class="toggles"><details><summary>Abstract</summary><p>Tactile information is essential for contact-rich manipulation tasks in robotics. Vision-based tactile sensors make it particularly easy to design end-to-end manipulation policies with tactile sensing, as they enable the use of existing encoders from computer vision. However, this has led to a huge variety of architectures, training datasets, and evaluation protocols, making it difficult to determine which design choices best encode touch. In this work, we address this gap and present a comprehensive study of tactile encoders and fusion strategies across various contact-rich manipulation tasks in real-world experiments. To enable a controlled comparison, we train and evaluate all models under the same pipeline and experimental setup, comprising more than 2000 real-world rollouts. Our results go beyond other studies that only compare simulation performance, which does not necessarily translate to real-world settings, where large-scale evaluations are needed to obtain reliable statistics. Our key finding is that there is no universally optimal representation or fusion strategy for encoding visual-tactile. Instead, the best encoder backbone and fusion scheme depend strongly on the task.</p></details><details><summary>All venues (2)</summary><ul><li><em>arXiv preprint</em>, 2026</li><li><em>3rd Workshop on Dexterous Manipulation: Full-Stack Robotics on Learning and Design</em>, CoRL 2026 Workshop</li></ul></details></div>
+            </div>
+          </article>
+        </section>
+        <section class="theme" id="robust">
+          <div class="theme-head"><h3>Robust &amp; Reactive Policies</h3><p>Staying reliable under sensor noise, dropout and fast-changing scenes.</p></div>
+          <article class="pub is-first">
+            <div class="media contain"><img src="images/disp.png" alt="" loading="lazy"></div>
+            <div class="pub-body">
+              <h4><a href="https://openreview.net/forum?id=0GSL9VRBib&noteId=0P93HqQSgo">DisDP: Robust Imitation Learning via Disentangled Diffusion Policies</a></h4>
+              <p class="authors"><strong>Pankhuri Vanjani</strong>, <a >Paul Mattes</a>, <a >Xiaogang Jia</a>, <a >Vedant Dave</a>, <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a></p>
+              <div class="badges"><span class="badge venue">RLC 2025</span><span class="badge star">R3 Workshop Spotlight</span><span class="badge first">First author</span></div>
+              <div class="actions"><a class="btn" href="https://openreview.net/forum?id=0GSL9VRBib&noteId=0P93HqQSgo">OpenReview</a></div>
+              <div class="toggles"><details><summary>Abstract</summary><p>This work introduces Disentangled Diffusion Policy (DisDP), an Imitation Learning (IL) method that enhances robustness by integrating multi-view disentanglement into diffusionbased policies. For robots to be deployed on a large scale across various applications they have to be robust against different perturbations, including sensor noise, complete sensor dropout and environmental variations. Existing IL methods struggle to generalize under such conditions, as they typically assume consistent, noise-free inputs. To address this limitation, DisDP structures sensory inputs into shared and private representations, preserving task-relevant global features while retaining distinct details from individual sensors. Additionally, Disentangled Behavior Cloning (DisBC) is introduced, a disentangled Behavior Cloning (BC) policy, to demonstrate the general applicance of disentanglement for IL. This structured representation improves resilience against sensor dropouts and perturbations. Evaluations on The Colosseum and Libero benchmarks demonstrate that disentangled policies achieve better performance in general and exhibit greater robustness to any perturbations compared to their baseline policies.</p></details><details><summary>All venues (4)</summary><ul><li>Reinforcement Learning Conference (RLC) 2025</li><li>Extended Abstract at the German Robotics Conference (GRC) 2025</li><li>Workshop on Reliable Robotics · Workshop on Learned Robot Representations</li><li>⭐ Spotlight Talk at R3: Reasoning for Robust Robot Manipulation in the Open World</li></ul></details></div>
+            </div>
+          </article>
+          <article class="pub">
+            <div class="media"><img src="images/vla_reactive.jpg" alt="" loading="lazy"></div>
+            <div class="pub-body">
+              <h4>What Makes a VLA Reactive? A Study of Execution Strategies for Dynamic Manipulation</h4>
+              <p class="authors">Zhuoyue Li, Zhendong Han, <strong>Pankhuri Vanjani</strong>, Wenting Li, <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a></p>
+              <div class="badges"><span class="badge venue">CoRL 2026 Workshop</span><span class="badge sup">Supervised project</span></div>
+              <div class="actions"></div>
+              <div class="toggles"><details><summary>Abstract</summary><p>Vision-language-action (VLA) models predict chunks of future actions, and when objects move, those chunks go stale before they are executed. We study what makes a pretrained VLA reactive, using &pi;<sub>0.5</sub> on two dynamic simulation benchmarks and three real-robot tasks. We vary the prediction and execution horizons, compare synchronous and asynchronous inference, test methods that deliver actions sooner or keep successive chunks continuous, and adapt the policy with motion cues and latent-space reinforcement learning. The best prediction horizon is about one second, and the best execution horizon depends on the checkpoint. Short horizons help more with asynchronous execution, and methods that keep the trajectory continuous outperform those that only reduce latency. Adapting the policy repairs targeted failures, but on the conveyor task changing the execution horizon gained as much. Reactivity depends on the execution pipeline as much as on the policy, so both should be evaluated together.</p></details></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="theme" id="earlier">
+          <div class="theme-head"><h3>Earlier work</h3></div>
+          <ul class="early"><li><a href="https://www.sciencedirect.com/science/article/pii/S1084804520302137">Communication and networking technologies for UAVs: A survey</a><span>Journal of Network and Computer Applications, 2020</span></li>
+          <li><a href="https://www.researchgate.net/publication/335051252_Image_processing-based_intelligent_robotic_system_for_assistance_of_agricultural_crops">Image processing-based intelligent robotic system for assistance of agricultural crops</a><span>International Journal of Social and Humanistic Computing, 2019</span></li></ul>
+        </section>
+      </section>
+
+      <footer>Last updated November 2026 &middot; Based on <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron&rsquo;s template</a></footer>
+    </main>
   </div>
+
   <script>
+    // News: show the latest items, expand to see older ones.
     (function () {
-      var vids = document.querySelectorAll('.bg-videos video'), i = 0;
-      if (vids.length < 2) return;
-      setInterval(function () {
-        vids[i].classList.remove('active');
-        i = (i + 1) % vids.length;
-        vids[i].classList.add('active');
-      }, 10000);
+      var btn = document.getElementById('news-toggle'), list = document.querySelector('.news');
+      if (!list.querySelector('.older')) { btn.hidden = true; return; }
+      btn.addEventListener('click', function () {
+        var open = list.classList.toggle('show-all');
+        btn.textContent = open ? 'Show less' : 'Show older news';
+      });
+    })();
+    // Paper videos: play on hover (desktop) or when scrolled into view (touch screens).
+    (function () {
+      var vids = document.querySelectorAll('.pub video');
+      var touch = window.matchMedia('(hover: none)').matches;
+      var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (still) return;
+      vids.forEach(function (v) {
+        var card = v.closest('.pub');
+        if (!touch) {
+          card.addEventListener('mouseenter', function () { v.play().catch(function () {}); card.classList.add('playing'); });
+          card.addEventListener('mouseleave', function () { v.pause(); card.classList.remove('playing'); });
+        }
+      });
+      if (touch && 'IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function (es) {
+          es.forEach(function (e) {
+            var card = e.target.closest('.pub');
+            if (e.isIntersecting) { e.target.play().catch(function () {}); card.classList.add('playing'); }
+            else { e.target.pause(); card.classList.remove('playing'); }
+          });
+        }, { threshold: 0.6 });
+        vids.forEach(function (v) { io.observe(v); });
+      }
     })();
   </script>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Pankhuri Vanjani</name>
-              </p>
-              <p>I am a PhD student in the <a href="https://irl.anthropomatik.kit.edu/">Intuitive Robots Lab</a> (IRL) at the Karlsruhe Institute of Technology (KIT), Germany supervised by <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a>
-                My research focuses on Learning robust policies from multiple modalities for robot manipulation tasks. 
-                Previously, I obtained my Master Degree in Embedded Systems(Computer Science) at the Saarland University where I wrote my thesis at Max Planck Institute supervised by <a href="https://people.mpi-inf.mpg.de/~golyanik/">Vladislav Golyanik</a>.
-                
-              </p>
-
-              <p style="text-align:center">
-                <a href="mailto:pankhurivanjani@gmail.com">Email</a> &nbsp/&nbsp
-                <a href="data/pankhuriCV.pdf">CV</a> &nbsp/&nbsp
-                <a href="https://scholar.google.de/citations?user=P4LhJLgAAAAJ&hl=de">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/pankhurivanjani/">Github</a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/pankhuri-vanjani-767283101/">LinkedIn</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/pankhuri-red.jpeg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/pankhuri-red.jpeg" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <p>
-                My research focuses on developing robust robot policies that can operate reliably in complex, real-world environments by leveraging multiple sensor modalities, such as vision, force, tactile, and language. 
-		I aim to build intelligent embodied agents that learn fine grained manipulation skills to perform a given task. 
-		This includes designing models adapting to sensor failures, noise, or incomplete observations, thereby improving resilience and reliability. 
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-        <div class="papers">
-          <div class="paper highlight">
-            <div class="paper-title"><a href="https://intuitive-robots.github.io/ReCAT/"><papertitle>ReCAT: Remember, Count, and Time: Structured Recurrent Memory for Robot Manipulation</papertitle></a></div>
-            <div class="paper-authors"><strong>Pankhuri Vanjani</strong>*, Mostafa Hatab*, Can Mizrakli*, Vaisakh Shaj, Zhuoyue Li, <a href="https://mbreuss.github.io/">Moritz Reuss</a>, <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a></div>
-            <div class="paper-venue"><em>arXiv preprint</em>, 2026<br>
-              <em>Memory for Robot Foundation Models</em>, CoRL 2026 Workshop</div>
-            <div class="paper-links"><a href="https://intuitive-robots.github.io/ReCAT/">Project Page</a> &nbsp/&nbsp <a href="https://arxiv.org/abs/2609.35200">arXiv</a></div>
-            <div class="paper-media"><video src="videos/recat_teaser_plant.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
-            <p class="abstract">Memory-dependent manipulation requires robots to make decisions using information that is no longer available to their current sensors, such as recalling an earlier visual cue, tracking task progress, counting repeated events, or estimating elapsed time. We present ReCAT, a language-conditioned policy with structured recurrent memory. An instruction-conditioned encoder forms features from the current observation. A recurrent memory integrates the observation stream through Mamba-2 layers and one causal attention layer. A flow-matching Transformer decoder reads the current and the historical representation through separate cross-attention in every block. ReCAT reaches 95.3% average success on LIBERO and 62.4% on RMBench, with the best or tied-best result on six of nine tasks. On three real-robot tasks probing spatial recall, event counting, and interval timing, the best ReCAT variant reaches 66.7% average success, against 8.3% for the strongest short-history baseline. Controlled comparisons within ReCAT show that the observation encoder and every-block memory conditioning are needed for this performance. They also show that update rules developed for efficient sequence modeling behave differently as robot memory: additive updates have the highest observed success on counting and timing, and delta-rule updates on spatial recall.</p>
-            <button type="button" class="read-more">Read more</button>
-            <div class="paper-note">* Core contributors</div>
-          </div>
-          <div class="paper highlight">
-            <div class="paper-title"><a href="https://intuitive-robots.github.io/DAM-VLA/"><papertitle>DAM-VLA: Decoupled Asynchronous Multimodal Vision Language Action Model</papertitle></a></div>
-            <div class="paper-authors"><strong>Pankhuri Vanjani</strong>, Zhuoyue Li, Jakub Suliga, <a href="https://mbreuss.github.io/">Moritz Reuss</a>, Gianluca Geraci, <a href="https://xinkai-jiang.github.io/">Xinkai Jiang</a>, <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a></div>
-            <div class="paper-venue"><em>Conference on Robot Learning (CoRL)</em>, 2026<br>
-              <em>From Perception to Action: Representation-Centric Robot Autonomy</em>, RSS 2025 Workshop<br>
-              <em>Diffusion for Robot Learning: From Generation to Action</em>, RSS 2025 Workshop — ⭐ Spotlight<br>
-              <em>Semantic Reasoning and Goal Understanding in Robotics</em>, RSS 2025 Workshop<br>
-              <em>Planning and Control with Imperfect Sensors and Perception</em>, RSS 2025 Workshop</div>
-            <div class="paper-links"><a href="https://intuitive-robots.github.io/DAM-VLA/">Project Page</a> &nbsp/&nbsp <a href="https://arxiv.org/pdf/2606.12105">arXiv</a></div>
-            <div class="paper-media"><video src="https://intuitive-robots.github.io/DAM-VLA/static/videos/teaser.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
-            <p class="abstract">Vision-language-action (VLA) models inherit a shared synchronous clock from vision-language pretraining, processing every input at one rate. This is misaligned with physical interaction, where a high-frequency modality changes at hundreds of hertz, vision evolves more slowly, and language stays constant across an episode. A synchronous VLA oversamples slow modalities, undersamples fast ones, and caps action generation at the lowest effective frequency. We hypothesize that decoupling temporal processing per modality, letting each update and retain information at its own sensor rate, yields stronger representations and more robust control. We present Decoupled Asynchronous Multimodal Vision Language Action (DAM-VLA), which maintains per-modality latent buffers refreshed at sensor rates and read continuously by the action head, integrating new high-frequency modalities through gated cross-attention that leaves the pretrained backbone intact. Across seven contact-rich real-world manipulation tasks, DAMVLA more than doubles the average success rate of the strongest synchronous baseline (95.2% vs. 40.95%) while sustaining smooth, reactive 100 Hz control</p>
-            <button type="button" class="read-more">Read more</button>
-          </div>
-          <div class="paper highlight">
-            <div class="paper-title"><a href="https://lasr-lab.github.io/touch-improves-grasping/"><papertitle>Touch Improves Learning Dexterous Grasping from Demonstration</papertitle></a></div>
-            <div class="paper-authors">Niklas Leukroth*, <strong>Pankhuri Vanjani</strong>*, Jakub Suliga, Ken Nakahara, <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a>, Roberto Calandra</div>
-            <div class="paper-venue"><em>Preprint</em>, 2026<br>
-              <em>4th Workshop on Dexterous Manipulation: Scalable Learning for Human-Level Skills</em>, RSS 2026 Workshop &mdash; &#11088; Oral<br>
-              <em>Tactile Sensing for Robotic Foundation Models</em>, RSS 2026 Workshop</div>
-            <div class="paper-links"><a href="https://lasr-lab.github.io/touch-improves-grasping/">Project Page</a></div>
-            <div class="paper-media"><img src="https://lasr-lab.github.io/touch-improves-grasping/images/method.png" alt="Touch Improves Learning Dexterous Grasping" loading="lazy"></div>
-            <p class="abstract">Robotic dexterous grasping with human-level performance remains an unsolved challenge. Imitation Learning (IL) offers a compelling paradigm, yet vision-only approaches are brittle under lighting changes and novel objects. Touch sensing addresses this gap by grounding manipulation in contact properties rather than visual appearance. We present a systematic study of touch sensing in dexterous, multi-fingered IL, evaluating three algorithms (ACT, Flow Matching, BESO) across transformer, Mamba, and xLSTM backbones, and three tactile representations (Vision-only, end-to-end CNN, pretrained Sparsh-X). Using VR teleoperation with a Digit 360-equipped robotic hand, we collect demonstrations and evaluate generalization to novel objects and robustness to lighting perturbations. We train 21 policy variants (7 algorithms-backbone combinations × 3 tactile representations) and evaluate each on the training and test objects, yielding 28 comparison pairs. In 25 of 28, tactile signals match or improve upon vision-only performance, with the largest gains on unseen objects and degraded lighting. Failure analysis reveals that touch primarily improves initial grasp alignment, reducing misplaced approaches. Notably, end-to-end CNN encoders degrade diffusion-based policies by corrupting visual subtasks, while pretrained encoders avoid this. These results provide practical guidance on learning algorithm, backbone, and tactile representation choices for imitation learning of dexterous grasping.</p>
-            <button type="button" class="read-more">Read more</button>
-            <div class="paper-note">* Equal contribution</div>
-          </div>
-          <div class="paper supervised">
-            <div class="paper-title"><papertitle>Few-Shot Residual Adaptation of Pretrained Latent World Models</papertitle><span class="supervised-tag">Supervised project</span></div>
-            <div class="paper-authors">Jakub Suliga, <strong>Pankhuri Vanjani</strong>, Nisarga Nilavadi, Wolfram Burgard, <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a></div>
-            <div class="paper-venue"><em>8th Robot Learning Workshop</em>, NeurIPS 2026 &mdash; &#11088; Oral<br>
-              <em>Continual World Models</em>, NeurIPS 2026 Workshop<br>
-              <em>Robot Learning at Deployment</em>, CoRL 2026 Workshop<br>
-              <em>Do Robots Need World Models?</em>, CoRL 2026 Workshop &mdash; &#11088; Spotlight<br>
-              <em>Continually Self-Improving Robots</em>, CoRL 2026 Workshop<br>
-              <em>Bringing Physics Simulation and World Models Together for Robotic Manipulation</em>, CoRL 2026 Workshop</div>
-            <div class="paper-media"><img src="images/residual_adaptation.png" alt="Few-Shot Residual Adaptation of Pretrained Latent World Models" loading="lazy"></div>
-            <p class="abstract">Pretrained latent world models can support visual planning and control, but their predictions may fail when physical dynamics change at deployment. We study whether such models can adapt from only a few interactions without modifying their pretrained weights or identifying the changed physical parameters. We introduce a few-shot residual adaptation approach that learns self-supervised corrections from latent prediction errors. The corrections are applied both inside the latent predictor and directly to its predicted latent state, while the pretrained world model remains frozen. We evaluate the approach in simulation and on a real robot under center-of-mass and friction shifts. These changes reduce the success of the frozen model to near zero. Using three interaction episodes for adaptation, our dual-site approach recovers 90% success under the center-of-mass shift and 100% under the modified friction on the real robot. Ablations show that correcting both locations outperforms single-site adaptation. Our diagnostics further suggest that much of the learned correction reduces a general prediction mismatch, while successful control also depends on shift-specific information captured during adaptation.</p>
-            <button type="button" class="read-more">Read more</button>
-          </div>
-          <div class="paper supervised">
-            <div class="paper-title"><papertitle>What Makes a VLA Reactive? A Study of Execution Strategies for Dynamic Manipulation</papertitle><span class="supervised-tag">Supervised project</span></div>
-            <div class="paper-authors">Zhuoyue Li, Zhendong Han, <strong>Pankhuri Vanjani</strong>, Wenting Li, <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a></div>
-            <div class="paper-venue"><em>Efficient Foundation Models for Real-Time Embodied AI</em>, CoRL 2026 Workshop</div>
-            <div class="paper-media"><img src="images/vla_reactive.jpg" alt="What Makes a VLA Reactive? A Study of Execution Strategies for Dynamic Manipulation" loading="lazy"></div>
-            <p class="abstract">Vision-language-action (VLA) models predict chunks of future actions, and when objects move, those chunks go stale before they are executed. We study what makes a pretrained VLA reactive, using &pi;<sub>0.5</sub> on two dynamic simulation benchmarks and three real-robot tasks. We vary the prediction and execution horizons, compare synchronous and asynchronous inference, test methods that deliver actions sooner or keep successive chunks continuous, and adapt the policy with motion cues and latent-space reinforcement learning. The best prediction horizon is about one second, and the best execution horizon depends on the checkpoint. Short horizons help more with asynchronous execution, and methods that keep the trajectory continuous outperform those that only reduce latency. Adapting the policy repairs targeted failures, but on the conveyor task changing the execution horizon gained as much. Reactivity depends on the execution pipeline as much as on the policy, so both should be evaluated together.</p>
-            <button type="button" class="read-more">Read more</button>
-          </div>
-          <div class="paper highlight">
-            <div class="paper-title"><a href="https://openreview.net/forum?id=0GSL9VRBib&noteId=0P93HqQSgo"><papertitle>DisDP: Robust Imitation Learning via Disentangled Diffusion Policies</papertitle></a></div>
-            <div class="paper-authors"><strong>Pankhuri Vanjani</strong>, <a >Paul Mattes</a>, <a >Xiaogang Jia</a>, <a >Vedant Dave</a>, <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a></div>
-            <div class="paper-venue">Reinforcement Learning Conference (RLC) 2025<br>
-              Extended Abstract at the German Robotics Conference (GRC) 2025<br>
-              Workshop on Reliable Robotics · Workshop on Learned Robot Representations<br>
-              ⭐ Spotlight Talk at R3: Reasoning for Robust Robot Manipulation in the Open World</div>
-            <div class="paper-links"><a href="https://openreview.net/forum?id=0GSL9VRBib&noteId=0P93HqQSgo">OpenReviewnet</a></div>
-            <div class="paper-media"><img src="images/disp.png" alt="DisDP" loading="lazy"></div>
-            <p class="abstract">This work introduces Disentangled Diffusion Policy (DisDP), an Imitation Learning (IL) method that enhances robustness by integrating multi-view disentanglement into diffusionbased policies. For robots to be deployed on a large scale across various applications they have to be robust against different perturbations, including sensor noise, complete sensor dropout and environmental variations. Existing IL methods struggle to generalize under such conditions, as they typically assume consistent, noise-free inputs. To address this limitation, DisDP structures sensory inputs into shared and private representations, preserving task-relevant global features while retaining distinct details from individual sensors. Additionally, Disentangled Behavior Cloning (DisBC) is introduced, a disentangled Behavior Cloning (BC) policy, to demonstrate the general applicance of disentanglement for IL. This structured representation improves resilience against sensor dropouts and perturbations. Evaluations on The Colosseum and Libero benchmarks demonstrate that disentangled policies achieve better performance in general and exhibit greater robustness to any perturbations compared to their baseline policies.</p>
-            <button type="button" class="read-more">Read more</button>
-          </div>
-          <div class="paper">
-            <div class="paper-title"><a href="https://utn-air.github.io/TACTIC/"><papertitle>TACTIC: Understanding Tactile Encoders and Conditioning for Contact-rich Robot Manipulation Policies</papertitle></a></div>
-            <div class="paper-authors">Seongjin Bien, Débora Oliveira Makowski, Carlo Kneissl, Reihaneh Mirjalili, <strong>Pankhuri Vanjani</strong>, <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a>, Gitta Kutyniok, Florian Walter, Wolfram Burgard</div>
-            <div class="paper-venue"><em>arXiv preprint</em>, 2026<br>
-              <em>3rd Workshop on Dexterous Manipulation: Full-Stack Robotics on Learning and Design</em>, CoRL 2026 Workshop</div>
-            <div class="paper-links"><a href="https://utn-air.github.io/TACTIC/">Project Page</a> &nbsp/&nbsp <a href="https://arxiv.org/abs/2609.30969">arXiv</a> &nbsp/&nbsp <a href="https://huggingface.co/collections/UTN-AIR/tactic">Dataset</a></div>
-            <div class="paper-media"><video src="https://utn-air.github.io/TACTIC/static/videos/tactic.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
-            <p class="abstract">Tactile information is essential for contact-rich manipulation tasks in robotics. Vision-based tactile sensors make it particularly easy to design end-to-end manipulation policies with tactile sensing, as they enable the use of existing encoders from computer vision. However, this has led to a huge variety of architectures, training datasets, and evaluation protocols, making it difficult to determine which design choices best encode touch. In this work, we address this gap and present a comprehensive study of tactile encoders and fusion strategies across various contact-rich manipulation tasks in real-world experiments. To enable a controlled comparison, we train and evaluate all models under the same pipeline and experimental setup, comprising more than 2000 real-world rollouts. Our results go beyond other studies that only compare simulation performance, which does not necessarily translate to real-world settings, where large-scale evaluations are needed to obtain reliable statistics. Our key finding is that there is no universally optimal representation or fusion strategy for encoding visual-tactile. Instead, the best encoder backbone and fusion scheme depend strongly on the task.</p>
-            <button type="button" class="read-more">Read more</button>
-          </div>
-          <div class="paper highlight">
-            <div class="paper-title"><a href="https://www.sciencedirect.com/science/article/pii/S1084804520302137"><papertitle>Communication and networking technologies for UAVs: A survey</papertitle></a></div>
-            <div class="paper-venue"><em> Journal of Network and Computer Applications</em>, 2020</div>
-            <div class="paper-links"><a href="https://www.sciencedirect.com/science/article/pii/S1084804520302137">sciencedirect</a></div>
-            <div class="paper-media"><img src="images/communication.jpg" alt="Communication and networking technologies for UAVs" loading="lazy"></div>
-            <p class="abstract">This paper aims at providing insights into the latest UAV (Unmanned Aerial Vehicle) communication technologies through investigation of suitable task modules, antennas, resource handling platforms, and network architectures. Additionally, we explore techniques such as machine learning and path planning to enhance existing drone communication methods</p>
-            <button type="button" class="read-more">Read more</button>
-          </div>
-          <div class="paper highlight">
-            <div class="paper-title"><a href="https://www.researchgate.net/publication/335051252_Image_processing-based_intelligent_robotic_system_for_assistance_of_agricultural_crops"><papertitle>Image processing-based intelligent robotic system for assistance of agricultural crops</papertitle></a></div>
-            <div class="paper-venue"><em> International Journal of Social and Humanistic Computing</em>, 2019</div>
-            <div class="paper-links"><a href="https://www.researchgate.net/publication/335051252_Image_processing-based_intelligent_robotic_system_for_assistance_of_agricultural_crops">researchgate</a></div>
-            <div class="paper-media"><img src="images/leafy.png" alt="Image processing-based intelligent robotic system for assistance of agricultural crops" loading="lazy"></div>
-            <p class="abstract">This paper presents improved image processing algorithms for detecting leaf infections and uses k-means clustering for agricultural field classification in a heterogeneous robotic system. The approach leverages a dataset of 3,150 crop disease images across three crop types, aiming to enable early disease detection and support mixed cropping via smart farming technologies.</p>
-            <button type="button" class="read-more">Read more</button>
-          </div>
-        </div>
-        <script>
-          document.querySelectorAll('.paper').forEach(function (p) {
-            var a = p.querySelector('.abstract'), b = p.querySelector('.read-more');
-            if (!a || !b) return;
-            if (a.scrollHeight <= a.clientHeight + 2) { b.style.display = 'none'; return; }
-            b.addEventListener('click', function () {
-              var open = a.classList.toggle('expanded');
-              b.textContent = open ? 'Show less' : 'Read more';
-            });
-          });
-        </script>
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-  <tr>
-      <td style="padding:0px; vertical-align: middle;">
-          <br>
-          <p style="text-align:right;font-size:small;">
-              The website is based on the code from <a href="https://github.com/jonbarron/jonbarron_website">source code</a>!
-          </p>
-      </td>
-  </tr>
-</tbody></table>
 </body>
-
 </html>
