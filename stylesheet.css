@@ -128,6 +128,34 @@ h2 { font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: 
 .toggles details ul { margin: 8px 0; padding-left: 18px; font-size: 13px; }
 .note { font-size: 12px; color: var(--muted); }
 
+/* Theme filters */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.filters button { font: inherit; font-size: 13px; color: var(--ink); background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 5px 13px; cursor: pointer; }
+.filters button:hover { border-color: var(--accent); color: var(--accent); }
+.filters button.on { background: var(--ink); color: #fff; border-color: var(--ink); }
+.theme-legend .lede { color: var(--muted); font-size: 14px; margin: 0 0 14px; }
+.badge.theme-tag { background: transparent; color: var(--muted); box-shadow: inset 0 0 0 1px var(--line); }
+.pub[hidden] { display: none; }
+.latest .theme-head h3::before { content: "\2022  "; color: var(--gold); }
+
+/* Horizontal theme layouts: compact cards */
+.theme-cols .pub, .theme-rows .pub { grid-template-columns: 1fr; gap: 10px; padding: 12px; }
+.theme-cols .pub h4, .theme-rows .pub h4 { font-size: 14.5px; }
+.theme-cols .authors, .theme-rows .authors { font-size: 12.5px; margin: 4px 0 8px; }
+.theme-cols .badge, .theme-rows .badge { font-size: 11px; padding: 4px 7px; }
+.theme-cols .btn, .theme-rows .btn { font-size: 12px; padding: 2px 8px; }
+/* A: three columns side by side */
+.theme-cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 18px; align-items: start; }
+.theme-cols .theme-head { min-height: 92px; border-top: 3px solid var(--ink); padding-top: 10px; }
+.theme-cols .theme-head h3 { font-size: 17px; }
+.theme-cols .theme-head p { font-size: 13px; }
+.theme-cols .pub { margin-bottom: 12px; }
+/* B: one row per theme, cards scroll sideways */
+.theme-rows .tcol { margin-top: 30px; }
+.theme-rows .tcards { display: grid; grid-auto-flow: column; grid-auto-columns: 280px; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 10px; }
+.theme-rows .pub { scroll-snap-align: start; margin: 0; align-self: start; }
+@media (max-width: 1000px) { .theme-cols { grid-template-columns: 1fr; } .theme-cols .theme-head { min-height: 0; } }
+
 /* Earlier work */
 .early { list-style: none; padding: 0; margin: 0; }
 .early li { padding: 8px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
