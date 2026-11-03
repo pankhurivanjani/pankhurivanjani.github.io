@@ -107,6 +107,9 @@ h2 { font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: 
 .media img, .media video { width: 100%; height: 100%; object-fit: cover; display: block; }
 .media.contain { background: #fff; }
 .media.contain img, .media.contain video { object-fit: contain; }
+/* Wide figures: let the frame follow the figure's own shape instead of a fixed 16:10 box */
+.media.contain { aspect-ratio: auto; }
+.media.contain img { height: auto; max-height: 220px; }
 .play {
   position: absolute; right: 8px; bottom: 8px; width: 26px; height: 26px; border-radius: 50%;
   background: rgba(0, 0, 0, 0.55); color: #fff; font-size: 11px; display: flex; align-items: center; justify-content: center;
