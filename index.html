@@ -32,8 +32,7 @@
 
       <section id="news">
         <h2>News</h2>
-        <ul class="news"><li><time>Nov 2026</time><span>Presenting <b>DAM-VLA</b> at <b>CoRL 2026</b>, together with several workshop papers.</span></li><li><time>Oct 2026</time><span><b>Few-Shot Residual Adaptation</b> selected for an <span class="hl">oral</span> at the NeurIPS 2026 Robot Learning Workshop.</span></li><li><time>Sep 2026</time><span><b>ReCAT</b> is out on arXiv: structured recurrent memory for robot manipulation.</span></li><li><time>Sep 2026</time><span><b>TACTIC</b>, a large real-world study of tactile encoders, is out on arXiv.</span></li><li class="older"><time>Jul 2026</time><span><b>Touch Improves Grasping</b> presented as an <span class="hl">oral</span> at the RSS 2026 Dexterous Manipulation Workshop.</span></li><li class="older"><time>Jun 2026</time><span><b>SPARC</b>, reliable spatial annotations for robot demonstrations at scale, accepted to <b>CoRL 2026</b>.</span></li><li class="older"><time>Jul 2025</time><span><b>DisDP</b> presented at RLC 2025.</span></li></ul>
-        <button type="button" class="link-btn" id="news-toggle">Show older news</button>
+        <div class="news-scroll" tabindex="0" aria-label="News, scroll for older items"><ul class="news"><li><time>Nov 2026</time><span>Presenting <b>DAM-VLA</b> at <b>CoRL 2026</b>, together with several workshop papers.</span></li><li><time>Oct 2026</time><span><b>Few-Shot Residual Adaptation</b> selected for an <span class="hl">oral</span> at the NeurIPS 2026 Robot Learning Workshop.</span></li><li><time>Sep 2026</time><span><b>ReCAT</b> is out on arXiv: structured recurrent memory for robot manipulation.</span></li><li><time>Sep 2026</time><span><b>TACTIC</b>, a large real-world study of tactile encoders, is out on arXiv.</span></li><li><time>Jul 2026</time><span><b>Touch Improves Grasping</b> presented as an <span class="hl">oral</span> at the RSS 2026 Dexterous Manipulation Workshop.</span></li><li><time>Jun 2026</time><span><b>SPARC</b>, reliable spatial annotations for robot demonstrations at scale, accepted to <b>CoRL 2026</b>.</span></li><li><time>Nov 2025</time><span>We are hosting the first <a href="https://intuitive-robots.github.io/RIG-Foundation-Model-Bootcamp/">Foundation Model Bootcamp</a> at KIT.</span></li><li><time>Jul 2025</time><span><b>DisDP</b> presented at RLC 2025.</span></li></ul></div>
       </section>
 
       <section id="research">
@@ -151,15 +150,6 @@
         var f = b.dataset.f;
         document.querySelectorAll('.publist .pub').forEach(function (p) { p.hidden = f !== 'all' && p.dataset.theme !== f; });
         document.querySelectorAll('.theme-legend .lede').forEach(function (l) { l.hidden = l.dataset.for !== f; });
-      });
-    })();
-    // News: show the latest items, expand to see older ones.
-    (function () {
-      var btn = document.getElementById('news-toggle'), list = document.querySelector('.news');
-      if (!list.querySelector('.older')) { btn.hidden = true; return; }
-      btn.addEventListener('click', function () {
-        var open = list.classList.toggle('show-all');
-        btn.textContent = open ? 'Show less' : 'Show older news';
       });
     })();
     // Paper videos: play on hover (desktop) or when scrolled into view (touch screens).
